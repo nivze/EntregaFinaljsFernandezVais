@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./estilo/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="encabezado">
+        <a href="./index.html"><img class="logo" src="./imagenes/logo.png" alt="logo"></a>
+        <nav>
+            <ul class="menu menu-encarrito">
+                <li><a href="./index.html">Productos</a></li>
+                <li class="carro"><a class="numerito" href="./carrito.html"><img class="carrito"
+                            src="./imagenes/carrito.png" alt="carrito"></a></li>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="venta">
+
+        <div class="alojamiento-de-productos">
+            <h1>Carrito</h1>
+            <p id="carritoComprado" class="esta-vacio apagado">Gracias por tu compra</p>
+            <p id="carrito-vacio" class="esta-vacio">Tu carrito esta vacio :C</p>
+            <div id="contenedor-de-productos" class=" ">
+                <!-- esto se va a llenar con js -->
+                
+
+            </div>
+            <button id="vaciar-carrito" class="boton vaciar-carrito">
+                Vaciar Carrito
+            </button>
+        </div>
+
+        </div>
+        <div id="totales" class="totales">
+            <h2>Detalles</h2>
+            <HR>
+            </HR>
+            <div class="detalle">
+
+                <div class="carrito-acciones-subtotal">
+                    <p  class="total">SUBTOTAL:</p>
+                    <p id="subtotal" class="total">$400000</p>
+                </div>
+                <hr>
+                <div class="carrito-acciones-envio">
+                    <p class="Subtotal">ENVIO</p>
+                    <p class="total">$3000</p>
+                </div>
+                <hr>
+                <div class="carrito-acciones-total">
+                    <h2 class="total">TOTAL</h2>
+                    <p id="total" class="total" >$4000</p>
+                </div>
+            </div>
+            <button id="comprar" class="boton boton-comprar carrito-acciones-comprar">Finalizar compra</button>
+        </div>
+    </main>
+    <footer>
+        <img class="banner" src="./imagenes/BANNER WEB CIF.png" alt="">
+    </footer>
+</body>
+<script src="./scrip/carrito.js"></script>
+
+</html>

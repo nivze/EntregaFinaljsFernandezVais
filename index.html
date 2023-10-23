@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilo/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="encabezado">
+        <a href="./index.html"><img class="logo" src="./imagenes/logo.png" alt="logo"></a>
+        <ul class="menu">
+            <li><a href="./index.html">Productos</a></li>
+            <li class="carro"><a class="numerito" href="./carrito.html"><img class="carrito" src="./imagenes/carrito.png" alt="carrito"><span id="numerito" class="carrito">0</span></a></li>
+        </ul>
+    
+    </header>
+   
+    <main class="ancho-min">
+        <div class="categorias">
+            <button id="notebook" class="boton-categoria activo">All</button>
+            <button id="lenovo" class="boton-categoria">Lenovo</button>
+            <button id="msi" class="boton-categoria">Msi</button>
+            <button id="hp" class="boton-categoria">Hp</button>
+            <button id="asus" class="boton-categoria">Asus</button>
+        </div>
+        <h1 id="titulo">Todos los productos</h1>
+        <div id="contenedor">
+
+        </div>
+        <!-- esto se va a llenar con js -->
+    </main>
+    <footer>
+        <img class="banner" src="./imagenes/BANNER WEB CIF.png" alt="">
+    </footer>
+    <script src="./scrip/main.js"></script>
+</body>
+
+</html>

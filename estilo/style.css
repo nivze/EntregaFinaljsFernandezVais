@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
+/* font-family: 'IBM Plex Mono', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: 'Bebas Neue', sans-serif; */
+*{
+    padding: 0;
+    margin: 0;
+}
+/* botones de categorias */
+.ancho-min{
+    display: flex;
+    flex-direction: column;
+}
+.categorias{
+    height: 60px;
+}
+.boton-categoria{
+    background-color: rgb(53, 66, 235);
+    color: rgb(255, 255, 255);
+    height: 25px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 80px;
+    margin: 0 15px ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 1rem;
+    transition: .5s;
+}
+.boton-categoria:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(53, 66, 235);
+    height: 25px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 80px;
+    margin: 0 15px ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 1rem;
+    
+}
+.activo{
+    background-color: rgb(255, 255, 255);
+    color: rgb(53, 66, 235);
+    height: 25px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 80px;
+    margin: 0 15px ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 1rem;
+    transition: .5s;
+}
+.activo:hover{
+    background-color: rgb(53, 66, 235);
+    color: rgb(255, 255, 255);
+    height: 25px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 80px;
+    margin: 0 15px ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 1rem;
+}
+/*  */
+#titulo{
+    height: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+/*  */
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 120px;
+    padding: 0 0 0 50px;
+}
+.menu{
+    color:black;
+    display: flex;
+    list-style: none;
+    margin: 10px;
+    
+    align-items: baseline;
+}
+.menu li {
+    padding: 15px;
+}
+.menu li a{
+    color: black;
+    text-decoration: none;
+}
+ main{
+    margin: 15px 0 15px 0;
+    display: flex;
+    align-items: center
+}
+.carrito{
+    width: 40px;
+
+}
+.carro{
+    display: flex;
+    align-content: center;
+}
+.numerito{
+    padding: 5px;
+}
+#contenedor{
+    display: flex;  
+    flex-wrap: wrap; 
+    min-height: 80vh;
+}
+.producto{
+    
+    margin: 7.5px;
+    height: 345px;
+    width: 190px;
+    border-radius: 1%;
+    padding: 0 5px 10px 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
+    transition: 0.5s;
+    background-color: rgb(255, 255, 255);
+}
+.producto:hover{
+        margin-top: -10px;
+        .nombre-producto{
+            font-weight: bold;
+        }       
+}
+.producto img{
+    width: 180px;
+   
+   
+}  
+  .producto .capa {
+    height: 0;
+    opacity: 0;  
+    transition: 0.5;  
+}
+  .producto:hover .capa {
+    opacity: 1;
+    position: relative;   
+    top: -180px;
+    transition: .5s;
+  }
+.nombre-producto{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: small;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.precio{
+    color: rgb(46, 196, 0);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.espacio-boton{
+    height: 60px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.boton{
+    background-color: rgb(53, 66, 235);
+    border-radius: 2px solid rgb(53, 66, 235);
+    height: 40px;
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: large;
+   border-radius: 1rem;
+   transition: 0.5s;
+   cursor: pointer;
+}
+.boton:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(53, 66, 235);
+}
+.banner{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* carrito de compras */
+.venta{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: flex-start;
+    min-height: 60vh;
+    
+}
+.alojamiento-de-productos{
+    margin: 10px;
+    
+}
+.imagen-carrito{
+    height: 160px;
+    border-radius: 1rem;
+    padding: 8px;
+}
+.totales{
+    position: relative;
+    height: 99%;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    padding: 10px;
+}
+.totales h2{
+    font-size: 50px;
+}
+.carrito-producto-nombre{
+    width: 30%;
+}
+.detalle{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    
+}
+.carrito-acciones-subtotal,
+.carrito-acciones-envio,
+.carrito-acciones-total{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Subtotal{
+    font-weight: bold;
+    padding: 10px;
+}
+.total{
+    padding: 10px;
+}
+.carrito-producto{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(75, 75, 219, 0.263);
+    border-radius: 1rem;
+    margin: 5px;
+}
+.boton-carrito{
+    background-color: rgb(76, 31, 255);
+    height: 40px;
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: large;
+    height: 10vh;
+    border-radius: 1rem;
+    transition: .5s;
+   
+}
+.boton-carrito:hover{
+    background-color: aliceblue;
+    color: rgb(76, 31, 255);
+}
+.boton-comprar{
+    margin: 10px;
+}
+.apagado {
+    display: none;
+}
+.esta-vacio{
+    padding: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align-last: center;
+    color: blue;
+    font-size: xx-large;
+}
+.vaciar-carrito{
+ width: 120px;
+}
